@@ -23,6 +23,12 @@ const Projects = () => {
       description: "A dynamic web application displaying categorized items with active search and filtering functionality. Built to practice responsive design principles, component rendering, and real-time DOM manipulation.",
       tech: ["Vite", "React", "JavaScript", "UI/UX", "Flexbox"],
       github: "https://github.com/sankara012"
+    },
+    {
+      title: "Personal Portfolio Website",
+      description: "A personal portfolio website showcasing projects, skills, and contact information. Focuses on responsive design, smooth navigation, and interactive elements to enhance user experience.",
+      tech: ["React", "Vite", "Responsive Design"],
+      github: "https://github.com/sankara012"
     }
   ];
 

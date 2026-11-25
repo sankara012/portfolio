@@ -28,7 +28,36 @@
 
 .logo-icon {
   color: var(--accent-primary);
-  filter: drop-shadow(var(--accent-glow));
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
+  animation: cpu-pulse-color 4s infinite ease-in-out;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease, color 0.5s ease;
+}
+
+.logo:hover .logo-icon {
+  transform: rotate(180deg) scale(1.15);
+}
+
+@keyframes cpu-pulse-color {
+  0% {
+    color: #38bdf8; /* Vibrant Cyan */
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
+    transform: scale(1);
+  }
+  33% {
+    color: #818cf8; /* Electric Indigo */
+    filter: drop-shadow(0 0 14px rgba(129, 140, 248, 0.85));
+    transform: scale(1.08);
+  }
+  66% {
+    color: #34d399; /* Cyber Mint Green */
+    filter: drop-shadow(0 0 14px rgba(52, 211, 153, 0.85));
+    transform: scale(1.04);
+  }
+  100% {
+    color: #38bdf8; /* Vibrant Cyan */
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
+    transform: scale(1);
+  }
 }
 
 .nav-links {
